@@ -209,16 +209,20 @@ Practice accessing data above by console.log-ing following items:
 
 //(1) Name of the first artist (0th index) in the array
 
-
+console.log('Name of the first artist in the array: ',artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
 
-
+console.log('Bio of the third artist in the array: ',artists[2].bio);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 (not auto tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
+console.log('This should be Vincent Van Dough: ',artists[8]);
+
+artists[8].name = 'Vincent Van Gogh';
+console.log('9th artist [this should be Vincent Van Gogh, with all the correct information: ',artists[8]);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -230,8 +234,8 @@ Use getArtistByIndex to do the following:
 
 🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(arr, i) {
+  return `the artist at index ${i} is ${arr[i].name}`;
 }
 
 
